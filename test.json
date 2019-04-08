@@ -1,0 +1,1135 @@
+object(stdClass)#2 (37) {
+  ["abuse"]=>
+  object(stdClass)#1 (3) {
+    ["categories"]=>
+    NULL
+    ["error"]=>
+    NULL
+    ["completeData"]=>
+    NULL
+  }
+  ["categories"]=>
+  object(stdClass)#3 (2) {
+    ["shops"]=>
+    NULL
+    ["error"]=>
+    bool(false)
+  }
+  ["categorySelect"]=>
+  object(stdClass)#4 (3) {
+    ["categories"]=>
+    array(0) {
+    }
+    ["parents"]=>
+    object(stdClass)#5 (0) {
+    }
+    ["dataState"]=>
+    string(12) "notRequested"
+  }
+  ["delivery"]=>
+  object(stdClass)#7 (6) {
+    ["geo"]=>
+    object(stdClass)#6 (3) {
+      ["coords"]=>
+      NULL
+      ["isLoading"]=>
+      bool(false)
+      ["isFailed"]=>
+      bool(false)
+    }
+    ["init"]=>
+    object(stdClass)#8 (4) {
+      ["item"]=>
+      NULL
+      ["location"]=>
+      NULL
+      ["hasError"]=>
+      bool(false)
+      ["isFetching"]=>
+      bool(true)
+    }
+    ["page"]=>
+    NULL
+    ["postamat"]=>
+    object(stdClass)#12 (5) {
+      ["form"]=>
+      object(stdClass)#10 (3) {
+        ["data"]=>
+        object(stdClass)#9 (0) {
+        }
+        ["errors"]=>
+        object(stdClass)#11 (0) {
+        }
+        ["isLoading"]=>
+        bool(false)
+      }
+      ["terminals"]=>
+      object(stdClass)#13 (7) {
+        ["items"]=>
+        array(0) {
+        }
+        ["clusters"]=>
+        array(0) {
+        }
+        ["common"]=>
+        NULL
+        ["selectedFullInfo"]=>
+        NULL
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+        ["requestId"]=>
+        string(0) ""
+      }
+      ["order"]=>
+      object(stdClass)#14 (3) {
+        ["response"]=>
+        NULL
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+      }
+      ["paymentTransaction"]=>
+      object(stdClass)#15 (3) {
+        ["isLoading"]=>
+        bool(false)
+        ["response"]=>
+        NULL
+        ["error"]=>
+        NULL
+      }
+      ["terminalInfo"]=>
+      object(stdClass)#16 (3) {
+        ["data"]=>
+        NULL
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+      }
+    }
+    ["terminalInfo"]=>
+    object(stdClass)#17 (3) {
+      ["data"]=>
+      NULL
+      ["isLoading"]=>
+      bool(false)
+      ["error"]=>
+      NULL
+    }
+    ["ymap"]=>
+    object(stdClass)#18 (2) {
+      ["isLoading"]=>
+      bool(false)
+      ["isLoaded"]=>
+      bool(false)
+    }
+  }
+  ["favorite"]=>
+  object(stdClass)#20 (1) {
+    ["favorites"]=>
+    object(stdClass)#19 (0) {
+    }
+  }
+  ["favorites"]=>
+  object(stdClass)#21 (3) {
+    ["items"]=>
+    NULL
+    ["isFetch"]=>
+    bool(true)
+    ["refs"]=>
+    NULL
+  }
+  ["locationDataSource"]=>
+  object(stdClass)#23 (3) {
+    ["direction"]=>
+    object(stdClass)#22 (0) {
+    }
+    ["metro"]=>
+    object(stdClass)#24 (0) {
+    }
+    ["district"]=>
+    object(stdClass)#25 (0) {
+    }
+  }
+  ["global"]=>
+  object(stdClass)#26 (1) {
+    ["user"]=>
+    NULL
+  }
+  ["historyListener"]=>
+  object(stdClass)#27 (1) {
+    ["hasPrevPage"]=>
+    bool(false)
+  }
+  ["item"]=>
+  object(stdClass)#28 (6) {
+    ["complementaryItems"]=>
+    NULL
+    ["isFetch"]=>
+    bool(false)
+    ["isError"]=>
+    bool(false)
+    ["item"]=>
+    object(stdClass)#36 (22) {
+      ["refs"]=>
+      object(stdClass)#32 (2) {
+        ["locations"]=>
+        object(stdClass)#30 (2) {
+          ["623110"]=>
+          object(stdClass)#29 (1) {
+            ["name"]=>
+            string(39) "Астраханская область"
+          }
+          ["623260"]=>
+          object(stdClass)#31 (2) {
+            ["name"]=>
+            string(10) "Лиман"
+            ["parentId"]=>
+            int(623110)
+          }
+        }
+        ["categories"]=>
+        object(stdClass)#34 (2) {
+          ["1"]=>
+          object(stdClass)#33 (1) {
+            ["name"]=>
+            string(18) "Транспорт"
+          }
+          ["9"]=>
+          object(stdClass)#35 (2) {
+            ["name"]=>
+            string(20) "Автомобили"
+            ["parentId"]=>
+            int(1)
+          }
+        }
+      }
+      ["id"]=>
+      int(1274909156)
+      ["categoryId"]=>
+      int(9)
+      ["locationId"]=>
+      int(623260)
+      ["sharing"]=>
+      object(stdClass)#37 (9) {
+        ["fb"]=>
+        string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=fb&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+        ["gp"]=>
+        string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=gp&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+        ["lj"]=>
+        string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=lj&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+        ["mm"]=>
+        string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=mm&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+        ["native"]=>
+        string(140) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=native&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+        ["ok"]=>
+        string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=ok&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+        ["tw"]=>
+        string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=tw&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+        ["vk"]=>
+        string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=vk&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+        ["url"]=>
+        string(69) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156"
+      }
+      ["coords"]=>
+      object(stdClass)#38 (2) {
+        ["lat"]=>
+        float(45.774534)
+        ["lng"]=>
+        float(47.219313)
+      }
+      ["address"]=>
+      string(112) "Астраханская область, Лиманский район, рабочий посёлок Лиман"
+      ["title"]=>
+      string(50) "ВАЗ 2114 Samara 1.6 МТ, 2009, хетчбэк"
+      ["titleGenerated"]=>
+      bool(true)
+      ["userType"]=>
+      string(7) "private"
+      ["time"]=>
+      int(1553432155)
+      ["description"]=>
+      string(790) "100% нe битый ...aвтo в хopoшем состоянии. .cтоит нoвоe АKБ. .новый стaрте и гeнepaтoр 120А. Мaслa и фильтры мeнялись нe дaвнo. мeнял тoрмoзныe колодки. диcки и бaрабаны. Мeнял радиaтоp пeчки и вентилятop ,и все патpубки. Cтoит автозапуcк.  По xoдовке вcе отлично. Мaшина oчeнь резвая. Ecть два нopмальных рыжика  и бампера сломаны.  Не хватает времени на ремонт. Масло не ест ,нет ни одной квашеной детали любые проверки за ваш счёт. Машина вся зашумлена..  Торг у капота."
+      ["parameters"]=>
+      object(stdClass)#51 (2) {
+        ["flat"]=>
+        array(12) {
+          [0]=>
+          object(stdClass)#39 (2) {
+            ["title"]=>
+            string(18) "Категория"
+            ["description"]=>
+            string(20) "Автомобили"
+          }
+          [1]=>
+          object(stdClass)#40 (2) {
+            ["title"]=>
+            string(32) "Владельцев по ПТС"
+            ["description"]=>
+            string(2) "4+"
+          }
+          [2]=>
+          object(stdClass)#41 (2) {
+            ["title"]=>
+            string(27) "Тип автомобиля"
+            ["description"]=>
+            string(19) "С пробегом"
+          }
+          [3]=>
+          object(stdClass)#42 (2) {
+            ["title"]=>
+            string(33) "Количество дверей"
+            ["description"]=>
+            string(1) "5"
+          }
+          [4]=>
+          object(stdClass)#43 (2) {
+            ["title"]=>
+            string(43) "Мощность двигателя, л.с."
+            ["description"]=>
+            string(2) "80"
+          }
+          [5]=>
+          object(stdClass)#44 (2) {
+            ["title"]=>
+            string(25) "Тип двигателя"
+            ["description"]=>
+            string(12) "Бензин"
+          }
+          [6]=>
+          object(stdClass)#45 (2) {
+            ["title"]=>
+            string(18) "Пробег, км"
+            ["description"]=>
+            string(7) "240 000"
+          }
+          [7]=>
+          object(stdClass)#46 (2) {
+            ["title"]=>
+            string(8) "Цвет"
+            ["description"]=>
+            string(20) "Серебряный"
+          }
+          [8]=>
+          object(stdClass)#47 (2) {
+            ["title"]=>
+            string(12) "Привод"
+            ["description"]=>
+            string(16) "Передний"
+          }
+          [9]=>
+          object(stdClass)#48 (2) {
+            ["title"]=>
+            string(8) "Руль"
+            ["description"]=>
+            string(10) "Левый"
+          }
+          [10]=>
+          object(stdClass)#49 (2) {
+            ["title"]=>
+            string(18) "Состояние"
+            ["description"]=>
+            string(15) "Не битый"
+          }
+          [11]=>
+          object(stdClass)#50 (2) {
+            ["title"]=>
+            string(34) "VIN или номер кузова"
+            ["description"]=>
+            string(17) "XTA21144*94****51"
+          }
+        }
+        ["groups"]=>
+        array(0) {
+        }
+      }
+      ["images"]=>
+      array(7) {
+        [0]=>
+        object(stdClass)#52 (5) {
+          ["100x75"]=>
+          string(45) "https://68.img.avito.st/100x75/5387836968.jpg"
+          ["140x105"]=>
+          string(46) "https://68.img.avito.st/140x105/5387836968.jpg"
+          ["240x180"]=>
+          string(46) "https://68.img.avito.st/240x180/5387836968.jpg"
+          ["432x324"]=>
+          string(46) "https://68.img.avito.st/432x324/5387836968.jpg"
+          ["640x480"]=>
+          string(46) "https://68.img.avito.st/640x480/5387836968.jpg"
+        }
+        [1]=>
+        object(stdClass)#53 (5) {
+          ["100x75"]=>
+          string(45) "https://36.img.avito.st/100x75/5387177036.jpg"
+          ["140x105"]=>
+          string(46) "https://36.img.avito.st/140x105/5387177036.jpg"
+          ["240x180"]=>
+          string(46) "https://36.img.avito.st/240x180/5387177036.jpg"
+          ["432x324"]=>
+          string(46) "https://36.img.avito.st/432x324/5387177036.jpg"
+          ["640x480"]=>
+          string(46) "https://36.img.avito.st/640x480/5387177036.jpg"
+        }
+        [2]=>
+        object(stdClass)#54 (5) {
+          ["100x75"]=>
+          string(45) "https://83.img.avito.st/100x75/5387177083.jpg"
+          ["140x105"]=>
+          string(46) "https://83.img.avito.st/140x105/5387177083.jpg"
+          ["240x180"]=>
+          string(46) "https://83.img.avito.st/240x180/5387177083.jpg"
+          ["432x324"]=>
+          string(46) "https://83.img.avito.st/432x324/5387177083.jpg"
+          ["640x480"]=>
+          string(46) "https://83.img.avito.st/640x480/5387177083.jpg"
+        }
+        [3]=>
+        object(stdClass)#55 (5) {
+          ["100x75"]=>
+          string(45) "https://43.img.avito.st/100x75/5388800043.jpg"
+          ["140x105"]=>
+          string(46) "https://43.img.avito.st/140x105/5388800043.jpg"
+          ["240x180"]=>
+          string(46) "https://43.img.avito.st/240x180/5388800043.jpg"
+          ["432x324"]=>
+          string(46) "https://43.img.avito.st/432x324/5388800043.jpg"
+          ["640x480"]=>
+          string(46) "https://43.img.avito.st/640x480/5388800043.jpg"
+        }
+        [4]=>
+        object(stdClass)#56 (5) {
+          ["100x75"]=>
+          string(45) "https://74.img.avito.st/100x75/5388800074.jpg"
+          ["140x105"]=>
+          string(46) "https://74.img.avito.st/140x105/5388800074.jpg"
+          ["240x180"]=>
+          string(46) "https://74.img.avito.st/240x180/5388800074.jpg"
+          ["432x324"]=>
+          string(46) "https://74.img.avito.st/432x324/5388800074.jpg"
+          ["640x480"]=>
+          string(46) "https://74.img.avito.st/640x480/5388800074.jpg"
+        }
+        [5]=>
+        object(stdClass)#57 (5) {
+          ["100x75"]=>
+          string(45) "https://43.img.avito.st/100x75/5387837043.jpg"
+          ["140x105"]=>
+          string(46) "https://43.img.avito.st/140x105/5387837043.jpg"
+          ["240x180"]=>
+          string(46) "https://43.img.avito.st/240x180/5387837043.jpg"
+          ["432x324"]=>
+          string(46) "https://43.img.avito.st/432x324/5387837043.jpg"
+          ["640x480"]=>
+          string(46) "https://43.img.avito.st/640x480/5387837043.jpg"
+        }
+        [6]=>
+        object(stdClass)#58 (5) {
+          ["100x75"]=>
+          string(45) "https://81.img.avito.st/100x75/5387177081.jpg"
+          ["140x105"]=>
+          string(46) "https://81.img.avito.st/140x105/5387177081.jpg"
+          ["240x180"]=>
+          string(46) "https://81.img.avito.st/240x180/5387177081.jpg"
+          ["432x324"]=>
+          string(46) "https://81.img.avito.st/432x324/5387177081.jpg"
+          ["640x480"]=>
+          string(46) "https://81.img.avito.st/640x480/5387177081.jpg"
+        }
+      }
+      ["price"]=>
+      object(stdClass)#59 (3) {
+        ["title"]=>
+        string(8) "Цена"
+        ["value"]=>
+        string(7) "160 000"
+        ["metric"]=>
+        string(7) "руб."
+      }
+      ["seller"]=>
+      object(stdClass)#60 (9) {
+        ["title"]=>
+        string(23) "Частное лицо"
+        ["name"]=>
+        string(33) "Тагир Абдурашидов"
+        ["connection"]=>
+        object(stdClass)#61 (2) {
+          ["title"]=>
+          string(22) "Подтверждён"
+          ["sources"]=>
+          array(1) {
+            [0]=>
+            object(stdClass)#62 (1) {
+              ["type"]=>
+              string(5) "phone"
+            }
+          }
+        }
+        ["link"]=>
+        string(194) "ru.avito://1/user/profile?userKey=cd77cc6648fd393243257385e86d7d3eda0a3680d43b987da26885e98f637af2&context=H4sIAAAAAAAAA0u0MrKqLgYSSpkpStaZVoZG5iaWBpaGpmbWxVbGVkrFRclKQJYJUL4kNVfJuhYANJvSwTEAAAA"
+        ["images"]=>
+        object(stdClass)#63 (9) {
+          ["24x24"]=>
+          string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_24x24.png"
+          ["36x36"]=>
+          string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_36x36.png"
+          ["48x48"]=>
+          string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_48x48.png"
+          ["64x64"]=>
+          string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_64x64.png"
+          ["72x72"]=>
+          string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_72x72.png"
+          ["96x96"]=>
+          string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_96x96.png"
+          ["128x128"]=>
+          string(54) "https://www.avito.st/stub_avatars/%D0%A2/8_128x128.png"
+          ["192x192"]=>
+          string(54) "https://www.avito.st/stub_avatars/%D0%A2/8_192x192.png"
+          ["256x256"]=>
+          string(54) "https://www.avito.st/stub_avatars/%D0%A2/8_256x256.png"
+        }
+        ["postfix"]=>
+        string(23) "Частное лицо"
+        ["userHashId"]=>
+        string(9) "132599409"
+        ["online"]=>
+        bool(false)
+        ["replyTime"]=>
+        object(stdClass)#64 (2) {
+          ["category"]=>
+          int(3)
+          ["text"]=>
+          string(51) "Отвечает за несколько часов"
+        }
+      }
+      ["stats"]=>
+      object(stdClass)#66 (1) {
+        ["views"]=>
+        object(stdClass)#65 (2) {
+          ["today"]=>
+          int(142)
+          ["total"]=>
+          int(142)
+        }
+      }
+      ["contacts"]=>
+      object(stdClass)#71 (1) {
+        ["list"]=>
+        array(2) {
+          [0]=>
+          object(stdClass)#67 (2) {
+            ["type"]=>
+            string(5) "phone"
+            ["value"]=>
+            object(stdClass)#68 (2) {
+              ["title"]=>
+              string(18) "Позвонить"
+              ["uri"]=>
+              string(45) "ru.avito://1/phone/call?number=%2B79881704004"
+            }
+          }
+          [1]=>
+          object(stdClass)#69 (2) {
+            ["type"]=>
+            string(9) "messenger"
+            ["value"]=>
+            object(stdClass)#70 (2) {
+              ["title"]=>
+              string(16) "Написать"
+              ["uri"]=>
+              string(50) "ru.avito://1/item/channel/create?itemId=1274909156"
+            }
+          }
+        }
+      }
+      ["autoteka"]=>
+      object(stdClass)#72 (2) {
+        ["reportAvailable"]=>
+        bool(true)
+        ["vin"]=>
+        string(17) "XTA21144*94****51"
+      }
+      ["anonymousNumber"]=>
+      object(stdClass)#73 (2) {
+        ["title"]=>
+        string(42) "Номер продавца защищён"
+        ["subtitle"]=>
+        string(85) "СМС и сообщения в WhatsApp, Viber доставлены не будут."
+      }
+      ["firebaseParams"]=>
+      object(stdClass)#74 (29) {
+        ["itemID"]=>
+        string(10) "1274909156"
+        ["itemPrice"]=>
+        string(6) "160000"
+        ["withDelivery"]=>
+        string(1) "0"
+        ["vehicle_type"]=>
+        string(19) "С пробегом"
+        ["kolichestvo_dverey"]=>
+        string(1) "5"
+        ["capacity"]=>
+        string(9) "80 л.с."
+        ["transmission"]=>
+        string(16) "Механика"
+        ["engine_type"]=>
+        string(12) "Бензин"
+        ["body_type"]=>
+        string(14) "Хетчбэк"
+        ["year"]=>
+        string(4) "2009"
+        ["brand"]=>
+        string(13) "ВАЗ (LADA)"
+        ["mileage"]=>
+        string(12) "240 000 км"
+        ["model"]=>
+        string(11) "2114 Samara"
+        ["type_of_trade"]=>
+        string(46) "Продаю личный автомобиль"
+        ["engine"]=>
+        string(3) "1.6"
+        ["color"]=>
+        string(20) "Серебряный"
+        ["drive"]=>
+        string(16) "Передний"
+        ["wheel"]=>
+        string(10) "Левый"
+        ["condition"]=>
+        string(15) "Не битый"
+        ["isPersonalAuto"]=>
+        string(1) "1"
+        ["isNewAuto"]=>
+        string(1) "0"
+        ["userAuth"]=>
+        string(1) "0"
+        ["isShop"]=>
+        string(1) "0"
+        ["isASDClient"]=>
+        string(1) "0"
+        ["vertical"]=>
+        string(4) "AUTO"
+        ["categoryId"]=>
+        string(1) "9"
+        ["categorySlug"]=>
+        string(10) "avtomobili"
+        ["microCategoryId"]=>
+        string(5) "22504"
+        ["locationId"]=>
+        string(6) "623260"
+      }
+      ["adjustParams"]=>
+      object(stdClass)#75 (3) {
+        ["categoryId"]=>
+        string(1) "9"
+        ["vertical"]=>
+        string(4) "AUTO"
+        ["microCategoryId"]=>
+        string(5) "22504"
+      }
+    }
+    ["timestamp"]=>
+    int(1553453821360)
+    ["itemTitle"]=>
+    string(197) "ВАЗ 2114 Samara 1.6 МТ, 2009, хетчбэк - Транспорт, Автомобили - Астраханская область, Лиман - Объявления на сайте Авито"
+  }
+  ["itemEditor"]=>
+  object(stdClass)#76 (6) {
+    ["isFetch"]=>
+    bool(false)
+    ["isFetchError"]=>
+    bool(false)
+    ["isEditingFetch"]=>
+    bool(false)
+    ["errors"]=>
+    NULL
+    ["warnings"]=>
+    NULL
+    ["info"]=>
+    NULL
+  }
+  ["itemCreator"]=>
+  object(stdClass)#77 (13) {
+    ["isStepsFetch"]=>
+    bool(false)
+    ["isStepsFetchError"]=>
+    bool(false)
+    ["isSuggestByVINFetch"]=>
+    bool(false)
+    ["isProfileFetch"]=>
+    bool(false)
+    ["steps"]=>
+    NULL
+    ["params"]=>
+    NULL
+    ["errors"]=>
+    NULL
+    ["warnings"]=>
+    NULL
+    ["wizardId"]=>
+    NULL
+    ["profile"]=>
+    NULL
+    ["profileErrors"]=>
+    NULL
+    ["anonymousNumber"]=>
+    NULL
+    ["verifyPhoneProcess"]=>
+    bool(false)
+  }
+  ["locationChooser"]=>
+  object(stdClass)#78 (0) {
+  }
+  ["main"]=>
+  object(stdClass)#79 (6) {
+    ["list"]=>
+    array(0) {
+    }
+    ["lastStamp"]=>
+    NULL
+    ["isFetch"]=>
+    bool(false)
+    ["geoLocationBannerIsHidden"]=>
+    bool(false)
+    ["ads"]=>
+    NULL
+    ["bannersFromInternalBannerRotation"]=>
+    object(stdClass)#80 (2) {
+      ["visible"]=>
+      bool(false)
+      ["banners"]=>
+      NULL
+    }
+  }
+  ["geoLocation"]=>
+  object(stdClass)#81 (2) {
+    ["manuallyChanged"]=>
+    bool(false)
+    ["geoLocation"]=>
+    object(stdClass)#82 (2) {
+      ["id"]=>
+      int(621540)
+      ["names"]=>
+      object(stdClass)#83 (3) {
+        ["1"]=>
+        string(12) "Россия"
+        ["2"]=>
+        string(12) "России"
+        ["6"]=>
+        string(12) "России"
+      }
+    }
+  }
+  ["modalPage"]=>
+  object(stdClass)#84 (1) {
+    ["modalPageMode"]=>
+    bool(false)
+  }
+  ["navigation"]=>
+  object(stdClass)#85 (5) {
+    ["contacts"]=>
+    NULL
+    ["avatar"]=>
+    NULL
+    ["channels"]=>
+    object(stdClass)#86 (1) {
+      ["unread"]=>
+      int(0)
+    }
+    ["unread"]=>
+    int(0)
+    ["subscriptions"]=>
+    array(0) {
+    }
+  }
+  ["recommendationsSearch"]=>
+  object(stdClass)#87 (1) {
+    ["isFetch"]=>
+    bool(false)
+  }
+  ["recoveryPassword"]=>
+  object(stdClass)#88 (2) {
+    ["resetPasswordComplete"]=>
+    bool(false)
+    ["isShowEmailModal"]=>
+    bool(false)
+  }
+  ["regions"]=>
+  object(stdClass)#89 (0) {
+  }
+  ["registration"]=>
+  object(stdClass)#90 (1) {
+    ["profiles"]=>
+    array(0) {
+    }
+  }
+  ["search"]=>
+  object(stdClass)#91 (13) {
+    ["items"]=>
+    array(0) {
+    }
+    ["shortcuts"]=>
+    array(0) {
+    }
+    ["subscriptions"]=>
+    array(0) {
+    }
+    ["notMoreItems"]=>
+    bool(false)
+    ["isFetch"]=>
+    bool(false)
+    ["isFetchFailed"]=>
+    bool(false)
+    ["isFirstLoadStarted"]=>
+    bool(false)
+    ["activePage"]=>
+    int(0)
+    ["lastStamp"]=>
+    NULL
+    ["subscriptionsStatus"]=>
+    bool(false)
+    ["ads"]=>
+    NULL
+    ["searchParams"]=>
+    NULL
+    ["advertisementRedirect"]=>
+    NULL
+  }
+  ["searchBar"]=>
+  object(stdClass)#92 (0) {
+  }
+  ["searchForm"]=>
+  object(stdClass)#93 (2) {
+    ["isFetch"]=>
+    bool(true)
+    ["isCountFetch"]=>
+    bool(true)
+  }
+  ["sendReviewForm"]=>
+  object(stdClass)#94 (4) {
+    ["items"]=>
+    array(0) {
+    }
+    ["stages"]=>
+    array(0) {
+    }
+    ["api"]=>
+    object(stdClass)#96 (3) {
+      ["items"]=>
+      object(stdClass)#95 (3) {
+        ["loading"]=>
+        bool(false)
+        ["hasError"]=>
+        bool(false)
+        ["nextPageUrl"]=>
+        string(32) "/web/1/user/${hashUserId}/search"
+      }
+      ["stages"]=>
+      object(stdClass)#97 (2) {
+        ["loading"]=>
+        bool(false)
+        ["hasError"]=>
+        bool(false)
+      }
+      ["form"]=>
+      object(stdClass)#98 (2) {
+        ["loading"]=>
+        bool(false)
+        ["hasError"]=>
+        bool(false)
+      }
+    }
+    ["ui"]=>
+    object(stdClass)#99 (2) {
+      ["step"]=>
+      string(24) "sendReviewForm/ITEM_STEP"
+      ["value"]=>
+      object(stdClass)#100 (4) {
+        ["sendReviewForm/ITEM_STEP"]=>
+        NULL
+        ["sendReviewForm/STAGE_STEP"]=>
+        NULL
+        ["sendReviewForm/RATING_STEP"]=>
+        NULL
+        ["sendReviewForm/COMMENT_STEP"]=>
+        NULL
+      }
+    }
+  }
+  ["shop"]=>
+  object(stdClass)#101 (3) {
+    ["activePage"]=>
+    int(0)
+    ["shopLoaded"]=>
+    bool(false)
+    ["isReviewsFetch"]=>
+    bool(false)
+  }
+  ["shopSearch"]=>
+  object(stdClass)#102 (5) {
+    ["items"]=>
+    array(0) {
+    }
+    ["isFetch"]=>
+    bool(true)
+    ["isFetchFailed"]=>
+    bool(false)
+    ["activePage"]=>
+    int(0)
+    ["lastStamp"]=>
+    NULL
+  }
+  ["shortTermRent"]=>
+  object(stdClass)#110 (2) {
+    ["booking"]=>
+    object(stdClass)#104 (5) {
+      ["widget"]=>
+      object(stdClass)#103 (5) {
+        ["isLoading"]=>
+        bool(true)
+        ["error"]=>
+        NULL
+        ["user"]=>
+        NULL
+        ["item"]=>
+        NULL
+        ["booking"]=>
+        NULL
+      }
+      ["calendar"]=>
+      object(stdClass)#105 (4) {
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+        ["dates"]=>
+        object(stdClass)#106 (0) {
+        }
+        ["disabledDays"]=>
+        array(0) {
+        }
+      }
+      ["calculation"]=>
+      object(stdClass)#107 (3) {
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+        ["data"]=>
+        NULL
+      }
+      ["order"]=>
+      object(stdClass)#108 (2) {
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+      }
+      ["item"]=>
+      object(stdClass)#109 (3) {
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+        ["data"]=>
+        NULL
+      }
+    }
+    ["prices"]=>
+    object(stdClass)#114 (4) {
+      ["calendar"]=>
+      object(stdClass)#111 (4) {
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+        ["form"]=>
+        object(stdClass)#112 (0) {
+        }
+        ["dates"]=>
+        object(stdClass)#113 (0) {
+        }
+      }
+      ["intervals"]=>
+      object(stdClass)#115 (3) {
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+        ["dates"]=>
+        object(stdClass)#116 (0) {
+        }
+      }
+      ["item"]=>
+      object(stdClass)#117 (3) {
+        ["isLoading"]=>
+        bool(false)
+        ["error"]=>
+        NULL
+        ["data"]=>
+        NULL
+      }
+      ["availability"]=>
+      object(stdClass)#118 (2) {
+        ["isLoading"]=>
+        bool(true)
+        ["isAvailable"]=>
+        bool(false)
+      }
+    }
+  }
+  ["simpleCV"]=>
+  object(stdClass)#121 (5) {
+    ["cvs"]=>
+    object(stdClass)#120 (7) {
+      ["byIds"]=>
+      object(stdClass)#119 (0) {
+      }
+      ["allIds"]=>
+      array(0) {
+      }
+      ["activeId"]=>
+      NULL
+      ["count"]=>
+      int(0)
+      ["error"]=>
+      NULL
+      ["isSubmiting"]=>
+      bool(false)
+      ["isSubmited"]=>
+      bool(false)
+    }
+    ["form"]=>
+    object(stdClass)#123 (9) {
+      ["data"]=>
+      object(stdClass)#122 (0) {
+      }
+      ["errors"]=>
+      object(stdClass)#124 (0) {
+      }
+      ["isInit"]=>
+      bool(true)
+      ["isEmailExist"]=>
+      bool(false)
+      ["isPhoneVerified"]=>
+      bool(false)
+      ["isSubmiting"]=>
+      bool(false)
+      ["isSubmited"]=>
+      bool(false)
+      ["isVerifying"]=>
+      bool(false)
+      ["isVerified"]=>
+      bool(false)
+    }
+    ["phone"]=>
+    object(stdClass)#125 (7) {
+      ["code"]=>
+      string(0) ""
+      ["error"]=>
+      NULL
+      ["nextTryTime"]=>
+      NULL
+      ["isLinking"]=>
+      bool(false)
+      ["isLinked"]=>
+      bool(false)
+      ["isChecking"]=>
+      bool(false)
+      ["isChecked"]=>
+      bool(false)
+    }
+    ["regions"]=>
+    object(stdClass)#126 (0) {
+    }
+    ["common"]=>
+    object(stdClass)#127 (1) {
+      ["isCVDisabled"]=>
+      bool(false)
+    }
+  }
+  ["subscriptions"]=>
+  object(stdClass)#128 (1) {
+    ["list"]=>
+    NULL
+  }
+  ["userProfile"]=>
+  object(stdClass)#130 (3) {
+    ["rating"]=>
+    object(stdClass)#129 (3) {
+      ["isReviewsOpen"]=>
+      bool(false)
+      ["isReviewFormOpen"]=>
+      bool(false)
+      ["accessMessage"]=>
+      string(0) ""
+    }
+    ["profile"]=>
+    object(stdClass)#131 (4) {
+      ["info"]=>
+      NULL
+      ["items"]=>
+      object(stdClass)#132 (0) {
+      }
+      ["isFetch"]=>
+      bool(false)
+      ["error"]=>
+      NULL
+    }
+    ["api"]=>
+    object(stdClass)#133 (3) {
+      ["hasError"]=>
+      bool(false)
+      ["loading"]=>
+      bool(false)
+      ["nextPageUrl"]=>
+      string(33) "/api/3/user/${hashUserId}/ratings"
+    }
+  }
+  ["login"]=>
+  object(stdClass)#134 (0) {
+  }
+  ["favoriteSellers"]=>
+  object(stdClass)#135 (4) {
+    ["sellers"]=>
+    array(0) {
+    }
+    ["subscribedSellers"]=>
+    object(stdClass)#136 (0) {
+    }
+    ["nextPage"]=>
+    string(0) ""
+    ["isLoading"]=>
+    bool(false)
+  }
+  ["imageLoader"]=>
+  object(stdClass)#138 (1) {
+    ["loadingImages"]=>
+    object(stdClass)#137 (0) {
+    }
+  }
+  ["geoLocationAddMap"]=>
+  object(stdClass)#139 (1) {
+    ["error"]=>
+    NULL
+  }
+  ["codeInput"]=>
+  object(stdClass)#140 (0) {
+  }
+  ["abCentral"]=>
+  object(stdClass)#142 (1) {
+    ["ad_splitter"]=>
+    object(stdClass)#141 (4) {
+      ["featureAlias"]=>
+      string(15) "ad_splitter.one"
+      ["testId"]=>
+      int(593)
+      ["featureId"]=>
+      int(1)
+      ["group"]=>
+      int(9)
+    }
+  }
+}

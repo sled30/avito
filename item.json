@@ -1,0 +1,471 @@
+["item"]=>
+object(stdClass)#28 (6) {
+  ["complementaryItems"]=>
+  NULL
+  ["isFetch"]=>
+  bool(false)
+  ["isError"]=>
+  bool(false)
+  ["item"]=>
+  object(stdClass)#36 (22) {
+    ["refs"]=>
+    object(stdClass)#32 (2) {
+      ["locations"]=>
+      object(stdClass)#30 (2) {
+        ["623110"]=>
+        object(stdClass)#29 (1) {
+          ["name"]=>
+          string(39) "Астраханская область"
+        }
+        ["623260"]=>
+        object(stdClass)#31 (2) {
+          ["name"]=>
+          string(10) "Лиман"
+          ["parentId"]=>
+          int(623110)
+        }
+      }
+      ["categories"]=>
+      object(stdClass)#34 (2) {
+        ["1"]=>
+        object(stdClass)#33 (1) {
+          ["name"]=>
+          string(18) "Транспорт"
+        }
+        ["9"]=>
+        object(stdClass)#35 (2) {
+          ["name"]=>
+          string(20) "Автомобили"
+          ["parentId"]=>
+          int(1)
+        }
+      }
+    }
+    ["id"]=>
+    int(1274909156)
+    ["categoryId"]=>
+    int(9)
+    ["locationId"]=>
+    int(623260)
+    ["sharing"]=>
+    object(stdClass)#37 (9) {
+      ["fb"]=>
+      string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=fb&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+      ["gp"]=>
+      string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=gp&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+      ["lj"]=>
+      string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=lj&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+      ["mm"]=>
+      string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=mm&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+      ["native"]=>
+      string(140) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=native&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+      ["ok"]=>
+      string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=ok&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+      ["tw"]=>
+      string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=tw&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+      ["vk"]=>
+      string(136) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156?utm_campaign=vk&utm_medium=item_page_mavnew&utm_source=soc_sharing"
+      ["url"]=>
+      string(69) "https://www.avito.ru/liman/avtomobili/vaz_2114_samara_2009_1274909156"
+    }
+    ["coords"]=>
+    object(stdClass)#38 (2) {
+      ["lat"]=>
+      float(45.774534)
+      ["lng"]=>
+      float(47.219313)
+    }
+    ["address"]=>
+    string(112) "Астраханская область, Лиманский район, рабочий посёлок Лиман"
+    ["title"]=>
+    string(50) "ВАЗ 2114 Samara 1.6 МТ, 2009, хетчбэк"
+    ["titleGenerated"]=>
+    bool(true)
+    ["userType"]=>
+    string(7) "private"
+    ["time"]=>
+    int(1553432155)
+    ["description"]=>
+    string(790) "100% нe битый ...aвтo в хopoшем состоянии. .cтоит нoвоe АKБ. .новый стaрте и гeнepaтoр 120А. Мaслa и фильтры мeнялись нe дaвнo. мeнял тoрмoзныe колодки. диcки и бaрабаны. Мeнял радиaтоp пeчки и вентилятop ,и все патpубки. Cтoит автозапуcк.  По xoдовке вcе отлично. Мaшина oчeнь резвая. Ecть два нopмальных рыжика  и бампера сломаны.  Не хватает времени на ремонт. Масло не ест ,нет ни одной квашеной детали любые проверки за ваш счёт. Машина вся зашумлена..  Торг у капота."
+    ["parameters"]=>
+    object(stdClass)#51 (2) {
+      ["flat"]=>
+      array(12) {
+        [0]=>
+        object(stdClass)#39 (2) {
+          ["title"]=>
+          string(18) "Категория"
+          ["description"]=>
+          string(20) "Автомобили"
+        }
+        [1]=>
+        object(stdClass)#40 (2) {
+          ["title"]=>
+          string(32) "Владельцев по ПТС"
+          ["description"]=>
+          string(2) "4+"
+        }
+        [2]=>
+        object(stdClass)#41 (2) {
+          ["title"]=>
+          string(27) "Тип автомобиля"
+          ["description"]=>
+          string(19) "С пробегом"
+        }
+        [3]=>
+        object(stdClass)#42 (2) {
+          ["title"]=>
+          string(33) "Количество дверей"
+          ["description"]=>
+          string(1) "5"
+        }
+        [4]=>
+        object(stdClass)#43 (2) {
+          ["title"]=>
+          string(43) "Мощность двигателя, л.с."
+          ["description"]=>
+          string(2) "80"
+        }
+        [5]=>
+        object(stdClass)#44 (2) {
+          ["title"]=>
+          string(25) "Тип двигателя"
+          ["description"]=>
+          string(12) "Бензин"
+        }
+        [6]=>
+        object(stdClass)#45 (2) {
+          ["title"]=>
+          string(18) "Пробег, км"
+          ["description"]=>
+          string(7) "240 000"
+        }
+        [7]=>
+        object(stdClass)#46 (2) {
+          ["title"]=>
+          string(8) "Цвет"
+          ["description"]=>
+          string(20) "Серебряный"
+        }
+        [8]=>
+        object(stdClass)#47 (2) {
+          ["title"]=>
+          string(12) "Привод"
+          ["description"]=>
+          string(16) "Передний"
+        }
+        [9]=>
+        object(stdClass)#48 (2) {
+          ["title"]=>
+          string(8) "Руль"
+          ["description"]=>
+          string(10) "Левый"
+        }
+        [10]=>
+        object(stdClass)#49 (2) {
+          ["title"]=>
+          string(18) "Состояние"
+          ["description"]=>
+          string(15) "Не битый"
+        }
+        [11]=>
+        object(stdClass)#50 (2) {
+          ["title"]=>
+          string(34) "VIN или номер кузова"
+          ["description"]=>
+          string(17) "XTA21144*94****51"
+        }
+      }
+      ["groups"]=>
+      array(0) {
+      }
+    }
+    ["images"]=>
+    array(7) {
+      [0]=>
+      object(stdClass)#52 (5) {
+        ["100x75"]=>
+        string(45) "https://68.img.avito.st/100x75/5387836968.jpg"
+        ["140x105"]=>
+        string(46) "https://68.img.avito.st/140x105/5387836968.jpg"
+        ["240x180"]=>
+        string(46) "https://68.img.avito.st/240x180/5387836968.jpg"
+        ["432x324"]=>
+        string(46) "https://68.img.avito.st/432x324/5387836968.jpg"
+        ["640x480"]=>
+        string(46) "https://68.img.avito.st/640x480/5387836968.jpg"
+      }
+      [1]=>
+      object(stdClass)#53 (5) {
+        ["100x75"]=>
+        string(45) "https://36.img.avito.st/100x75/5387177036.jpg"
+        ["140x105"]=>
+        string(46) "https://36.img.avito.st/140x105/5387177036.jpg"
+        ["240x180"]=>
+        string(46) "https://36.img.avito.st/240x180/5387177036.jpg"
+        ["432x324"]=>
+        string(46) "https://36.img.avito.st/432x324/5387177036.jpg"
+        ["640x480"]=>
+        string(46) "https://36.img.avito.st/640x480/5387177036.jpg"
+      }
+      [2]=>
+      object(stdClass)#54 (5) {
+        ["100x75"]=>
+        string(45) "https://83.img.avito.st/100x75/5387177083.jpg"
+        ["140x105"]=>
+        string(46) "https://83.img.avito.st/140x105/5387177083.jpg"
+        ["240x180"]=>
+        string(46) "https://83.img.avito.st/240x180/5387177083.jpg"
+        ["432x324"]=>
+        string(46) "https://83.img.avito.st/432x324/5387177083.jpg"
+        ["640x480"]=>
+        string(46) "https://83.img.avito.st/640x480/5387177083.jpg"
+      }
+      [3]=>
+      object(stdClass)#55 (5) {
+        ["100x75"]=>
+        string(45) "https://43.img.avito.st/100x75/5388800043.jpg"
+        ["140x105"]=>
+        string(46) "https://43.img.avito.st/140x105/5388800043.jpg"
+        ["240x180"]=>
+        string(46) "https://43.img.avito.st/240x180/5388800043.jpg"
+        ["432x324"]=>
+        string(46) "https://43.img.avito.st/432x324/5388800043.jpg"
+        ["640x480"]=>
+        string(46) "https://43.img.avito.st/640x480/5388800043.jpg"
+      }
+      [4]=>
+      object(stdClass)#56 (5) {
+        ["100x75"]=>
+        string(45) "https://74.img.avito.st/100x75/5388800074.jpg"
+        ["140x105"]=>
+        string(46) "https://74.img.avito.st/140x105/5388800074.jpg"
+        ["240x180"]=>
+        string(46) "https://74.img.avito.st/240x180/5388800074.jpg"
+        ["432x324"]=>
+        string(46) "https://74.img.avito.st/432x324/5388800074.jpg"
+        ["640x480"]=>
+        string(46) "https://74.img.avito.st/640x480/5388800074.jpg"
+      }
+      [5]=>
+      object(stdClass)#57 (5) {
+        ["100x75"]=>
+        string(45) "https://43.img.avito.st/100x75/5387837043.jpg"
+        ["140x105"]=>
+        string(46) "https://43.img.avito.st/140x105/5387837043.jpg"
+        ["240x180"]=>
+        string(46) "https://43.img.avito.st/240x180/5387837043.jpg"
+        ["432x324"]=>
+        string(46) "https://43.img.avito.st/432x324/5387837043.jpg"
+        ["640x480"]=>
+        string(46) "https://43.img.avito.st/640x480/5387837043.jpg"
+      }
+      [6]=>
+      object(stdClass)#58 (5) {
+        ["100x75"]=>
+        string(45) "https://81.img.avito.st/100x75/5387177081.jpg"
+        ["140x105"]=>
+        string(46) "https://81.img.avito.st/140x105/5387177081.jpg"
+        ["240x180"]=>
+        string(46) "https://81.img.avito.st/240x180/5387177081.jpg"
+        ["432x324"]=>
+        string(46) "https://81.img.avito.st/432x324/5387177081.jpg"
+        ["640x480"]=>
+        string(46) "https://81.img.avito.st/640x480/5387177081.jpg"
+      }
+    }
+    ["price"]=>
+    object(stdClass)#59 (3) {
+      ["title"]=>
+      string(8) "Цена"
+      ["value"]=>
+      string(7) "160 000"
+      ["metric"]=>
+      string(7) "руб."
+    }
+    ["seller"]=>
+    object(stdClass)#60 (9) {
+      ["title"]=>
+      string(23) "Частное лицо"
+      ["name"]=>
+      string(33) "Тагир Абдурашидов"
+      ["connection"]=>
+      object(stdClass)#61 (2) {
+        ["title"]=>
+        string(22) "Подтверждён"
+        ["sources"]=>
+        array(1) {
+          [0]=>
+          object(stdClass)#62 (1) {
+            ["type"]=>
+            string(5) "phone"
+          }
+        }
+      }
+      ["link"]=>
+      string(194) "ru.avito://1/user/profile?userKey=cd77cc6648fd393243257385e86d7d3eda0a3680d43b987da26885e98f637af2&context=H4sIAAAAAAAAA0u0MrKqLgYSSpkpStaZVoZG5iaWBpaGpmbWxVbGVkrFRclKQJYJUL4kNVfJuhYANJvSwTEAAAA"
+      ["images"]=>
+      object(stdClass)#63 (9) {
+        ["24x24"]=>
+        string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_24x24.png"
+        ["36x36"]=>
+        string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_36x36.png"
+        ["48x48"]=>
+        string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_48x48.png"
+        ["64x64"]=>
+        string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_64x64.png"
+        ["72x72"]=>
+        string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_72x72.png"
+        ["96x96"]=>
+        string(52) "https://www.avito.st/stub_avatars/%D0%A2/8_96x96.png"
+        ["128x128"]=>
+        string(54) "https://www.avito.st/stub_avatars/%D0%A2/8_128x128.png"
+        ["192x192"]=>
+        string(54) "https://www.avito.st/stub_avatars/%D0%A2/8_192x192.png"
+        ["256x256"]=>
+        string(54) "https://www.avito.st/stub_avatars/%D0%A2/8_256x256.png"
+      }
+      ["postfix"]=>
+      string(23) "Частное лицо"
+      ["userHashId"]=>
+      string(9) "132599409"
+      ["online"]=>
+      bool(false)
+      ["replyTime"]=>
+      object(stdClass)#64 (2) {
+        ["category"]=>
+        int(3)
+        ["text"]=>
+        string(51) "Отвечает за несколько часов"
+      }
+    }
+    ["stats"]=>
+    object(stdClass)#66 (1) {
+      ["views"]=>
+      object(stdClass)#65 (2) {
+        ["today"]=>
+        int(142)
+        ["total"]=>
+        int(142)
+      }
+    }
+    ["contacts"]=>
+    object(stdClass)#71 (1) {
+      ["list"]=>
+      array(2) {
+        [0]=>
+        object(stdClass)#67 (2) {
+          ["type"]=>
+          string(5) "phone"
+          ["value"]=>
+          object(stdClass)#68 (2) {
+            ["title"]=>
+            string(18) "Позвонить"
+            ["uri"]=>
+            string(45) "ru.avito://1/phone/call?number=%2B79881704004"
+          }
+        }
+        [1]=>
+        object(stdClass)#69 (2) {
+          ["type"]=>
+          string(9) "messenger"
+          ["value"]=>
+          object(stdClass)#70 (2) {
+            ["title"]=>
+            string(16) "Написать"
+            ["uri"]=>
+            string(50) "ru.avito://1/item/channel/create?itemId=1274909156"
+          }
+        }
+      }
+    }
+    ["autoteka"]=>
+    object(stdClass)#72 (2) {
+      ["reportAvailable"]=>
+      bool(true)
+      ["vin"]=>
+      string(17) "XTA21144*94****51"
+    }
+    ["anonymousNumber"]=>
+    object(stdClass)#73 (2) {
+      ["title"]=>
+      string(42) "Номер продавца защищён"
+      ["subtitle"]=>
+      string(85) "СМС и сообщения в WhatsApp, Viber доставлены не будут."
+    }
+    ["firebaseParams"]=>
+    object(stdClass)#74 (29) {
+      ["itemID"]=>
+      string(10) "1274909156"
+      ["itemPrice"]=>
+      string(6) "160000"
+      ["withDelivery"]=>
+      string(1) "0"
+      ["vehicle_type"]=>
+      string(19) "С пробегом"
+      ["kolichestvo_dverey"]=>
+      string(1) "5"
+      ["capacity"]=>
+      string(9) "80 л.с."
+      ["transmission"]=>
+      string(16) "Механика"
+      ["engine_type"]=>
+      string(12) "Бензин"
+      ["body_type"]=>
+      string(14) "Хетчбэк"
+      ["year"]=>
+      string(4) "2009"
+      ["brand"]=>
+      string(13) "ВАЗ (LADA)"
+      ["mileage"]=>
+      string(12) "240 000 км"
+      ["model"]=>
+      string(11) "2114 Samara"
+      ["type_of_trade"]=>
+      string(46) "Продаю личный автомобиль"
+      ["engine"]=>
+      string(3) "1.6"
+      ["color"]=>
+      string(20) "Серебряный"
+      ["drive"]=>
+      string(16) "Передний"
+      ["wheel"]=>
+      string(10) "Левый"
+      ["condition"]=>
+      string(15) "Не битый"
+      ["isPersonalAuto"]=>
+      string(1) "1"
+      ["isNewAuto"]=>
+      string(1) "0"
+      ["userAuth"]=>
+      string(1) "0"
+      ["isShop"]=>
+      string(1) "0"
+      ["isASDClient"]=>
+      string(1) "0"
+      ["vertical"]=>
+      string(4) "AUTO"
+      ["categoryId"]=>
+      string(1) "9"
+      ["categorySlug"]=>
+      string(10) "avtomobili"
+      ["microCategoryId"]=>
+      string(5) "22504"
+      ["locationId"]=>
+      string(6) "623260"
+    }
+    ["adjustParams"]=>
+    object(stdClass)#75 (3) {
+      ["categoryId"]=>
+      string(1) "9"
+      ["vertical"]=>
+      string(4) "AUTO"
+      ["microCategoryId"]=>
+      string(5) "22504"
+    }
+  }
+  ["timestamp"]=>
+  int(1553453821360)
+  ["itemTitle"]=>
+  string(197) "ВАЗ 2114 Samara 1.6 МТ, 2009, хетчбэк - Транспорт, Автомобили - Астраханская область, Лиман - Объявления на сайте Авито"
+}
