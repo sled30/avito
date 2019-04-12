@@ -4,14 +4,13 @@ var_dump($w->item->item->address);*/
 /*title*/
 //var_dump($w->item->item->title);
 /*
-userType*/
+!!!!!!!!!!!!!!!!!!! не использую прилетает приват хз куда прикрутить userType*/
 //var_dump($w->item->item->userType);
 /*time*/
 //var_dump($w->item->item->time);
 /*description*/
 //var_dump($w->item->item->description);
 /**/
-
 //var_dump($w->item->item->parameters);
 /*данные машины*/
 /*float*/
