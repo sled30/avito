@@ -1,7 +1,7 @@
 <?php
+require_once 'db.php';
 // avito_parser_auto->pars_find->pars_car->->--->
 //   ->
-
 function avito_parser_auto($url){
   // code...
   $url_finde_page = pars_find($url);
@@ -18,7 +18,7 @@ function pars_car($array_link){
       $ad = file_get_contents($work_link);
     //  print_r($ad);
             //                                                          ограничение на Количество итераций!!!!!!!!!!!!!!!!!!!
-      if($i > 1) break;
+      if($i > 3) break;
       //$w = derban_json($ad);
       //print_r($w);
       $obj_auto = find_data_avto($ad);
@@ -45,32 +45,51 @@ function find_data_avto($data){
 /*разбираем json для сохранения или сразу сохраняем пока не знаю*/
 function derban_json($data_in_avto){
   $w = json_decode($data_in_avto);
-  //var_dump((array)$w->item->item->refs->locations);
   //АДРЕС!!!!
   //serrialise_address($w->item->item->refs->locations);
   // ГОРОД УЛИЦА
   //var_dump($w->item->item->address);
+  //var_dump($connect);
+  $address = $w->item->item->address;
+  $sel_addr= "select idaddress from address where street = '$address'";
+  $ins_addr = "insert into address(street) value('$address')";
+  ///$id_address = dbrequest($sel_addr, $ins_addr);
   //ОБЩАЯ ИНФА ПО МАШИНЕ
-  //var_dump($w->item->item->title);
+  $title = $w->item->item->title;
+  $sel_title= "select idtitle from title where title = '$title'";
+  $ins_title = "insert into title(title) value('$title')";
+/////////////////////////////////////////////////////////  !!!!!!!!!!!!!!!!!!!!!!!//$id_title = dbrequest($sel_title, $ins_title);
+//  var_dump($id_title);
   // дата создания объявления
+  $time = $w->item->item->time; //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!идет в общей внимание!!!!!!!!!!!!!!!!!!!!!
+  //$sel_time =
   //var_dump(date('l jS \of F Y h:i:s A', $w->item->item->time));
   //описание продавца
-  //var_dump($w->item->item->description);
+  ///////////////////var_dump($w->item->item->description);
   // данные машины
-  //serrialise_param_avto($w->item->item->parameters);
-  //var_dump($w->item->item->parameters);
+  $parametr = serrialise_param_avto($w->item->item->parameters);
+  var_dump($parametr);
   //
-  //serrialise_picture($w->item->item->images);
+//  serrialise_picture($w->item->item->images);
 
-//var_dump($w->item->item->images);
-//var_dump($w->item->item->price->value);
-// а вот нужен мне владелец или нет???????
-//var_dump($w->item->item->seller);
-//статистика сегодня
-var_dump($w->item->item->stats->views->today);
-//статистика всего
-var_dump($w->item->item->stats->views->total);
+    //var_dump($w->item->item->images);
+    //var_dump($w->item->item->price->value);
+    // а вот нужен мне владелец или нет???????
+    //в хер не уперся
+    //var_dump($w->item->item->seller);
+    //статистика сегодня
+    //var_dump($w->item->item->stats->views->today);
+    //статистика всего
+    //var_dump($w->item->item->stats->views->total);
+    //var_dump($w->item->item->contacts->list[0]->value->uri);
+    // телефон
+  //  echo serrialise_phone($w->item->item->contacts->list[0]->value->uri);
   }
+function serrialise_phone($src_phone){
+  // code...
+  $phone = explode('=%2B', $src_phone);
+  return $phone[1];
+}
 function serrialise_picture($image){
   // code...
   foreach ($image as $value){
@@ -152,15 +171,40 @@ function name_param($array){
 function serrialise_param_avto($parameters){
 
   //var_dump($parameters->flat);
+  /*$test = ["category",
+            "owners",
+            "type_avto",
+            "doors",
+            "power",
+            "type_power",
+            "run",
+            "color",
+            "drive",
+            "rule",
+            "good",
+            "vin"];*/
   foreach ($parameters->flat as $value) {
-    // code...
-  //  var_dump((array)$value);
-    echo name_param($value->title);
-    echo "\n";
-    echo $value->description;
-    echo "\n";
-  }
+      $title1 = name_param($value->title);
+      $title[$title1] = $value->description;
 
+    }
+  //var_dump($title);
+//  $title['run'] = (int)$title['run'];
+$title['run'] = str_replace(" ","", $title['run']);
+
+     $sel_param = "select id from parametr_auto
+              where category = '$title[category]' and owners = '$title[owners]'
+              and type_avto = '$title[type_avto]' and doors = '$title[doors]'
+              and power ='$title[power]' and type_power = '$title[type_power]'
+              and run = '$title[run]' and color = '$title[color]'
+              and drive = '$title[drive]' and rulel = '$title[rule]' and good = '$title[good]'
+              and vin = '$title[vin]'";
+      $ins_param = "insert into parametr_auto(category, owners, type_avto, doors, power, type_power,
+                run, color, drive, rulel, good, vin) value
+                ('$title[category]', '$title[owners]', '$title[type_avto]', '$title[doors]', '$title[power]', '$title[type_power]',
+                 '$title[run]', '$title[color]', '$title[drive]', '$title[rule]', '$title[good]', '$title[vin]')";
+
+      return dbrequest($sel_param, $ins_param);
 }
 function serrialise_address($address){
   // code...
@@ -168,29 +212,40 @@ function serrialise_address($address){
    foreach ($add as $key => $name){
      // code...
      $name_arr = (array)$name;
-     //echo $name_arr['name'];
-    // var_dump($key);
-     //var_dump((array)$name);
      if(array_key_exists('parentId', $name_arr)){
-       echo "nhtkkf".$name_arr['parentId'];
-       echo "rejion". $key;
-       }
+       $sity_name=$name_arr['name'];
+       $parentID= $name_arr['parentId'];
+        }
        else{
-         echo "id города ".$key . " bvz ". $name_arr['name']."\n";
-        // echo $name_arr['name'];
-       }
+       $region = $name_arr['name'];
+        }
    }
-  //var_dump($add);
-
-}
+  $sel_loca = "select idlocation from location where idsity='$parentID'
+   and rejion= '$region' and sity='$sity_name'";
+   $ins_loca = "insert into location (idsity, rejion, sity) value ('$parentID', '$region', '$sity_name')";
+  //echo $ins_loca;
+    ////// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    /////!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!   воткнуть обработчик который будет сохранять в базе и возвращать ид строки
+    ///// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+     return compact('sity_name', 'parentID', 'region');
+     }
 /*сохраняем в базу*/
-function dbrequest($sqlrequest, $sqlinsert, $connect){
+function dbrequest($sqlrequest, $sqlinsert){
+
   //var_dump($connect);
   //echo $sqlrequest;
+
+  $connect= mysqli_connect(DBHOST, DBUSER, DBPASWD, DBNAME);
+     if(!$connect){
+       echo "Ошибка: Невозможно установить соединение с MySQL." . PHP_EOL;
+       echo "Код ошибки errno: " . mysqli_connect_errno() . PHP_EOL;
+       echo "Текст ошибки error: " . mysqli_connect_error() . PHP_EOL;
+       exit;
+     }
   $db_quest=mysqli_query($connect, $sqlrequest);
-  if(is_bool($db_quest)){
-    var_dump($sqlrequest);
-  }
+    if(is_bool($db_quest)){
+  //  var_dump($sqlrequest);
+    }
   $id_request=mysqli_fetch_assoc($db_quest);
   $request=$id_request['id'];
   if(!$request){
