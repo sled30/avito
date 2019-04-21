@@ -68,7 +68,6 @@ function derban_json($data_in_avto){
     // а вот нужен мне владелец или нет???????
     //в хер не уперся
     $seller = $w->item->item->seller->name;
-    var_dump($seller);
 
     //статистика сегодня
     //var_dump($w->item->item->stats->views->today);
