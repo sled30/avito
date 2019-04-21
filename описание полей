@@ -1,0 +1,33 @@
+//var_dump($w->item);
+/*адресс
+var_dump($w->item->item->address);*/
+/*title*/
+//var_dump($w->item->item->title);
+/*
+!!!!!!!!!!!!!!!!!!! не использую прилетает приват хз куда прикрутить userType*/
+//var_dump($w->item->item->userType);
+/*time*/
+//var_dump($w->item->item->time);
+/*description*/
+//var_dump($w->item->item->description);
+/**/
+//var_dump($w->item->item->parameters);
+/*данные машины*/
+/*float*/
+/// !!!! no var_dump($w->item->item->float);
+/*
+$w->item->item->*/
+//var_dump($w->item->item->images);
+/*images
+prices ->*/
+//var_dump($w->item->item->price);
+          //sellers
+        //  var_dump($w->item->item->seller);
+          //stats
+          //var_dump($w->item->item->stats);
+
+
+//contacts ->
+//            list
+//var_dump($w->item->item->contacts->list[0]->value->uri);
+//firebaseParams
