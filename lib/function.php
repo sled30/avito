@@ -1,7 +1,5 @@
 <?php
 require_once 'db.php';
-  // avito_parser_auto->pars_find->pars_car->->--->
-  //   ->
 function avito_parser_auto($url){
   // code...
   $url_finde_page = pars_find($url);
@@ -10,15 +8,15 @@ function avito_parser_auto($url){
 /* принимает массив от парсинга поиска и заходит в объявление*/
 function pars_car($array_link){
   //var_dump($array_link);
-  $i = 0;
+  //$i = 0;
   foreach ($array_link[1] as $link){
       // code...
-      $i++;
+    //  $i++;
       $work_link = 'https://m.avito.ru'.$link;
       $ad = file_get_contents($work_link);
     //  print_r($ad);
             //                                                          ограничение на Количество итераций!!!!!!!!!!!!!!!!!!!
-      if($i > 4) break;
+    //  if($i > 4) break;
       //$w = derban_json($ad);
       //print_r($w);
       $obj_auto = find_data_avto($ad);
@@ -60,14 +58,10 @@ function derban_json($data_in_avto){
   $time = $w->item->item->time;
   //var_dump(date('l jS \of F Y h:i:s A', $w->item->item->time));
   $description = $w->item->item->description;
-  // данные машины
- $parametr = serrialise_param_avto($w->item->item->parameters);
+  $parametr = serrialise_param_avto($w->item->item->parameters);
   /////////////////////////////////////////////////////////////////////////////////   временно выключить!!!!!serrialise_picture($w->item->item->images, $id_order);
   $price = str_replace(" ", "", $w->item->item->price->value);
-
-    // а вот нужен мне владелец или нет???????
-    //в хер не уперся
-    $seller = $w->item->item->seller->name;
+  $seller = $w->item->item->seller->name;
 
     //статистика сегодня
     //var_dump($w->item->item->stats->views->today);
@@ -79,7 +73,7 @@ function derban_json($data_in_avto){
     // телефон
    $phone = serrialise_phone($w->item->item->contacts->list[0]->value->uri);
    $sel_order = "select id from bye where create_date = '$time' and phone = '$phone' and address = '$id_address' and   id_order = '$id_order' and location = '$location'
-   and id_title = '$id_title' and parametr_auto = '$parametr' and price = '$price' and description = '$description' and seler = '$seller'";
+   and id_title = '$id_title' and parametr_auto = '$parametr' and price = '$price' and seler = '$seller'";
    $ins_order = "insert into bye(create_date, phone, address, id_order, location, id_title, parametr_auto, price, description, seler) value('$time', '$phone', '$id_address', '$id_order', '$location',
     '$id_title', '$parametr', '$price', '$description', '$seller')";
     dbrequest($sel_order, $ins_order);
@@ -136,6 +130,10 @@ function name_param($array){
           $answer = 'power';
           return $answer;
           break;
+   case 'Мощность, л.с.':
+                $answer = 'power';
+                return $answer;
+                break;
     case 'Тип двигателя':
           $answer = 'type_power';
           return $answer;
@@ -167,7 +165,6 @@ function name_param($array){
    default:
       // code...
       $answer ='fuck';
-      var_dump($array);
       break;
   }
 }
@@ -191,7 +188,6 @@ function serrialise_param_avto($parameters){
       $title[$title1] = $value->description;
     }
        $title['run'] = str_replace(" ","", $title['run']);
-
        $sel_param = "select id from parametr_auto
                 where category = '$title[category]' and owners = '$title[owners]'
                 and type_avto = '$title[type_avto]' and doors = '$title[doors]'
