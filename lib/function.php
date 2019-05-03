@@ -1,5 +1,9 @@
 <?php
 require_once 'db.php';
+function view_avito_avto(){
+  $select_by = "SELECT * FROM `bye` ORDER by price";
+  var_dump(dbrequest($select_by));
+}
 function avito_parser_auto($url){
   // code...
   $url_finde_page = pars_find($url);
@@ -47,14 +51,10 @@ function derban_json($data_in_avto){
   $location = serrialise_address($w->item->item->refs->locations);
   $id_order = $w->item->item->id;
   $address = $w->item->item->address;
-  $sel_addr= "select id from address where street = '$address'";
-  $ins_addr = "insert into address(street) value('$address')";
+  $sel_addr= "select id from address where street = '$address' and sity = '$location'";
+  $ins_addr = "insert into address(street, sity) value('$address', '$location' )";
   $id_address = dbrequest($sel_addr, $ins_addr);
-  $title = $w->item->item->title;
-  $sel_title= "select id from title where title = '$title'";
-  $ins_title = "insert into title(title) value('$title')";
-
-  $id_title = dbrequest($sel_title, $ins_title);
+  $id_title = serrialise_title($w->item->item->title);
   $time = $w->item->item->time;
   //var_dump(date('l jS \of F Y h:i:s A', $w->item->item->time));
   $description = $w->item->item->description;
@@ -72,13 +72,24 @@ function derban_json($data_in_avto){
     //var_dump($w->item->item->contacts->list[0]->value->uri);
     // телефон
    $phone = serrialise_phone($w->item->item->contacts->list[0]->value->uri);
-   $sel_order = "select id from bye where create_date = '$time' and phone = '$phone' and address = '$id_address' and   id_order = '$id_order' and location = '$location'
-   and id_title = '$id_title' and parametr_auto = '$parametr' and price = '$price' and seler = '$seller'";
+   $sel_order = "select id from bye where id_order = '$id_order'";
    $ins_order = "insert into bye(create_date, phone, address, id_order, location, id_title, parametr_auto, price, description, seler) value('$time', '$phone', '$id_address', '$id_order', '$location',
     '$id_title', '$parametr', '$price', '$description', '$seller')";
     dbrequest($sel_order, $ins_order);
   // echo $sel_order;
    }
+function serrialise_title($title){
+ $id_title = explode(',', $title);
+  for($count = 0; $count < 3; $count++){
+    $id_title[$count] = trim($id_title[$count], " ");
+  }
+  $sel_title= "select id from title where model = '$id_title[0]' and year = '$id_title[1]' and type = '$id_title[2]'";
+  $ins_title = "insert into title(model, year, type) value('$id_title[0]', '$id_title[1]', '$id_title[2]')";
+
+  $id_title = dbrequest($sel_title, $ins_title);
+  return $id_title;
+
+}
 function serrialise_phone($src_phone){
   // code...
   $phone = explode('=%2B', $src_phone);
@@ -237,7 +248,7 @@ function escape($sql){
      }
   return mysqli_real_escape_string($connect, $sql);
 }
-function dbrequest($sqlrequest, $sqlinsert){
+function dbrequest($sqlrequest, $sqlinsert = NULL){
   $connect= mysqli_connect(DBHOST, DBUSER, DBPASWD, DBNAME);
      // echo $sqlinsert;
      // echo "\n";
@@ -246,6 +257,13 @@ function dbrequest($sqlrequest, $sqlinsert){
        echo "Код ошибки errno: " . mysqli_connect_errno() . PHP_EOL;
        echo "Текст ошибки error: " . mysqli_connect_error() . PHP_EOL;
        exit;
+     }
+     if($sqlinsert === NULL){
+       $db_quest=mysqli_query($connect, $sqlrequest);
+       while($data_select= mysqli_fetch_assoc($db_quest)){
+         $return_avto[] = $data_select;
+       }
+      return $return_avto;
      }
   $db_quest=mysqli_query($connect, $sqlrequest);
     if(is_bool($db_quest)){
