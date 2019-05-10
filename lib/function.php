@@ -8,24 +8,42 @@ function avito_parser_auto($url){
   // code...
   $url_finde_page = pars_find($url);
   pars_car($url_finde_page);
+  $list = return_page($url);
+  //var_dump($list);
+  foreach ($list as $link){
+    // code...
+    $link = 'https://www.avito.ru'.$link;
+    $url_finde_page = pars_find($link);
+    pars_car($url_finde_page);
+
+  }
+}
+function return_page($url){
+  $page = file_get_contents($url);
+  $match = '/<a class="pagination-page" href="(.{3,})"/';
+  preg_match_all($match, $page, $list);
+  return $list[1];
 }
 /* принимает массив от парсинга поиска и заходит в объявление*/
 function pars_car($array_link){
-  //var_dump($array_link);
   //$i = 0;
   foreach ($array_link[1] as $link){
       // code...
-    //  $i++;
       $work_link = 'https://m.avito.ru'.$link;
-      $ad = file_get_contents($work_link);
-    //  print_r($ad);
-            //                                                          ограничение на Количество итераций!!!!!!!!!!!!!!!!!!!
-    //  if($i > 4) break;
-      //$w = derban_json($ad);
-      //print_r($w);
-      $obj_auto = find_data_avto($ad);
-      derban_json($obj_auto);
 
+      $ad = file_get_contents($work_link);
+      if($ad !== false){
+        $obj_auto = find_data_avto($ad);
+        $id_bye = derban_json($obj_auto);
+        $update= "update bye set url='$work_link' where id ='$id_bye'";
+        dbrequest($update, 'update');
+        sleep(8);
+      }
+        else{
+          echo "drop connect $work_link \n";
+           sleep(10);
+           break;
+    }
   }
 }
 /* принимает урл поиска и дергает линки объявлений*/
@@ -75,8 +93,9 @@ function derban_json($data_in_avto){
    $sel_order = "select id from bye where id_order = '$id_order'";
    $ins_order = "insert into bye(create_date, phone, address, id_order, location, id_title, parametr_auto, price, description, seler) value('$time', '$phone', '$id_address', '$id_order', '$location',
     '$id_title', '$parametr', '$price', '$description', '$seller')";
-    dbrequest($sel_order, $ins_order);
-  // echo $sel_order;
+   $id_bye = dbrequest($sel_order, $ins_order);
+    return $id_bye;
+    // echo $sel_order;
    }
 function serrialise_title($title){
  $id_title = explode(',', $title);
@@ -199,6 +218,12 @@ function serrialise_param_avto($parameters){
       $title[$title1] = $value->description;
     }
        $title['run'] = str_replace(" ","", $title['run']);
+       if(!isset($title['doors'])){
+         $title['doors'] = '';
+       }
+       if(!isset($title['power'])){
+         $title['power'] = '';
+       }
        $sel_param = "select id from parametr_auto
                 where category = '$title[category]' and owners = '$title[owners]'
                 and type_avto = '$title[type_avto]' and doors = '$title[doors]'
@@ -265,6 +290,10 @@ function dbrequest($sqlrequest, $sqlinsert = NULL){
        }
       return $return_avto;
      }
+     if($sqlinsert == 'update'){
+       $db_quest=mysqli_query($connect, $sqlrequest);
+     }
+     else {
   $db_quest=mysqli_query($connect, $sqlrequest);
     if(is_bool($db_quest)){
   //  var_dump($sqlrequest);
@@ -277,4 +306,5 @@ function dbrequest($sqlrequest, $sqlinsert = NULL){
   }
   mysqli_close($connect);
   return $request;
+}
 }
