@@ -1,8 +1,46 @@
 <?php
 require_once 'db.php';
+function InvalidOrder(){
+  // code...
+  $sql_load_url = 'select id, url from bye where status is null';
+  $db_load_url = dbrequest($sql_load_url, 'select');
+  while ($load_url = mysqli_fetch_assoc($db_load_url)){
+    // code...
+
+    CheckStatusUrl($load_url);
+  }
+}
+function CheckStatusUrl($load_url){
+    $url=get_headers($load_url['url']);
+    if(!isset($url)){
+      echo "какая то херня";
+    }
+    if ($url[0]=='HTTP/1.1 200 OK'){
+      // code...
+      //echo "объявление валидно";
+    }
+    if ($url[0]=='HTTP/1.1 404 Not Found'){
+      // code...
+      //echo "закрыто";
+      $time = time();
+      $sql_update_status = "update bye set status=0, date_close='$time' where id='$load_url[id]'";
+      //echo $sql_update_status;
+      dbrequest($sql_update_status, 'update');
+   }
+  //  echo $url[0];
+  }
+function otchet($region, $model, $year){
+  $sql_otchet = "SELECT AVG(b.price) as medium, min(b.price) as min, max(b.price) as max, count(b.price) as count FROM title ti
+  join bye b ON b.id_title = ti.id
+  join location loc on b.location=loc.id
+  WHERE loc.idsity = '$region' and ti.model LIKE '$model' and ti.year=$year;";
+    $db_otchet = dbrequest($sql_otchet, 'select');
+    $otchet = mysqli_fetch_assoc($db_otchet);
+  return $otchet;
+}
 function view_avito_avto(){
   $select_by = "SELECT * FROM `bye` ORDER by price";
-  var_dump(dbrequest($select_by));
+  dbrequest($select_by);
 }
 function avito_parser_auto($url){
   // code...
@@ -30,6 +68,13 @@ function pars_car($array_link){
   foreach ($array_link[1] as $link){
       // code...
       $work_link = 'https://m.avito.ru'.$link;
+      $url_sql = "select id from bye where url = '$work_link'";
+      $url_db = dbrequest($url_sql, 'url');
+      if(isset($url_db)){
+          //var_dump($url_db);
+        continue;
+      }
+
 
       $ad = file_get_contents($work_link);
       if($ad !== false){
@@ -285,10 +330,20 @@ function dbrequest($sqlrequest, $sqlinsert = NULL){
      }
      if($sqlinsert === NULL){
        $db_quest=mysqli_query($connect, $sqlrequest);
+       echo $sqlrequest;
        while($data_select= mysqli_fetch_assoc($db_quest)){
          $return_avto[] = $data_select;
        }
       return $return_avto;
+     }
+     if($sqlinsert == 'select'){
+       $db_quest=mysqli_query($connect, $sqlrequest);
+        return $db_quest;
+      }
+     if($sqlinsert == 'url'){
+       $db_quest=mysqli_query($connect, $sqlrequest);
+       $data_select= mysqli_fetch_assoc($db_quest);
+        return $data_select['id'];
      }
      if($sqlinsert == 'update'){
        $db_quest=mysqli_query($connect, $sqlrequest);
