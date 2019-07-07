@@ -1,5 +1,16 @@
 <?php
 require_once 'db.php';
+function loadAutoru($source_cod){
+  // загрузка из автору
+  //$source_page = file_get_contents($url);
+  parser_url_Autoru($source_cod);
+}
+function parser_url_Autoru($source_cod){
+  var_dump($source_cod);
+  $match = '/class="Link" href="(.{60})" target/'; //target="_blank
+  preg_match_all($match, $source_cod, $list);
+  var_dump($list);
+}
 function InvalidOrder(){
   // code...
   $sql_load_url = 'select id, url from bye where status is null';

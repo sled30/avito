@@ -11,7 +11,7 @@ penzenskaya_oblast
 //https://www.avito.ru/astrahan/avtomobili/vaz_lada/2114_samara?radius=200&s_trg=13
 //https://www.avito.ru/astrahanskaya_oblast/avtomobili/vaz_lada/2114_samara?s_trg=4&f=188_901b
 $site = 'https://www.avito.ru';
-$region = ['astrahan', 'saratovskaya_oblast', 'samarskaya_oblast', 'penzenskaya_oblast'];
+$region = ['astrahan', 'saratovskaya_oblast', 'samarskaya_oblast', 'penzenskaya_oblast', 'volgograd'];
 //$region = 'astrahan';
 //$region = 'saratovskaya_oblast';
 //$region = 'samarskaya_oblast';
